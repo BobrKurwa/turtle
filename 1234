@@ -1,0 +1,15 @@
+import turtle 
+import time
+import random
+t = turtle.Turtle()
+while True:
+    i = random.randint(1,360)
+    b = random.randint(10, 50)
+    g = random.choice(["red", "blue", "yellow", "pink", "black", "purple"])
+    t.color(g)
+    t.pensize(b)
+    t.left(i)
+    t.forward(90)
+    t.right(i)
+
+time.sleep(2)
